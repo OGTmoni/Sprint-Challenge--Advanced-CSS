@@ -1,5 +1,10 @@
 // Home Content
 
+h1{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
 .home {
   
   .intro {
@@ -11,8 +16,6 @@
     p {
       padding:0 15px;
     }
-
-    background-color: red;
 
   }
 
@@ -60,6 +63,9 @@
       }
 
       .btn {
+       .custom-btn(@button-bg,@c)
+       border: 2px solid darkgrey;
+       padding: 10px 40px;
       }
     }
 
