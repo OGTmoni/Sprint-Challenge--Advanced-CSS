@@ -34,13 +34,37 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Responsive websites move with the size of the window the user is viewing it on. An example of a responsive site would be one that display certain pictures and aspects of the web design on a desktop and a more condensed version on tablets and mobile phones. 
+Adaptive websites adjust to the width of the browser and only at certain areas of the browser. Does not adjust beyond the set specifications. 
+
+
 2. Describe what it means to be mobile first vs desktop first.
+Mobile first design is a focused approach that starts with the design of for the main function of the site, then works toward higher resolutions. Also known as progressive enhancement. Good for site that: 
+•	The number of hits from mobile is 80% and above or 50%, but the sales are higher on mobile devices
+•	The user experience needs to be optimized for mobile and it’s enough to be merely functional on desktop
+•	The site or interface has only a few core features
+•	The service or product has a rather interactive nature (entertainment, lifestyle, networking, news etc.)
+
+Desktop first design
+
+The Desktop approach means designing for the utmost specifications as per design layout and the gracefully moving down to smaller resolutions. Also known as graceful degradation. 
+A good choice if:
+•	Both the number of visitors and the sales are higher on the desktop
+•	The site or interface is quite feature-rich, e.g. productivity, office or business tools
+•	The user experience needs to be highly refined on the desktop and it’s enough to be merely functional on mobile
+•	Some patches are required for the existing product, but the time and budget are limited
+
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+Works if is the user increases their font size in their browser settings. Hard coding a 10 px font size would override this setting. So it's deference to usability using a percentage rather than a hard-coded value.
 
 4. How would you describe preprocessing to someone new to CSS?
 
+Pre-processors have advanced features that allows code to be reusable In CSS. Using a preprocessor will increase productivity, and cut down on the amount of time it takes to code a project.  
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+ I like the mixins and imports. I am still having somewhat of a time understanding the syntax setup for nesting but feel like my understanding is getting stronger. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -94,11 +118,11 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [x ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [x ] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [ x] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
 * [ ] Navigation Styles: Use the `navigation.less` file for styling.
 
@@ -114,7 +138,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [ X] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
 * [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
