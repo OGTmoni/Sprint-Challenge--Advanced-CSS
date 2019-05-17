@@ -1,14 +1,35 @@
 // Home Content
 
 .headerBox a {
-  display: flex;
-  justify-content: center;
+
+  .commonrules1;
+  width: 10%;
 }
 h1 {
-  display: flex;
-  justify-content: center;
+  .commonrules1;
   font-size: 30px;
+
+  @media @phone{
+    .commonrules1;
+    text-align: center;
+  }
 }
+a{
+ text-decoration:none;
+ color: @ebony-clay;
+ font-size: @fontSize - 10px;
+}
+.container-home{
+ max-width: 1000px;
+  margin: 0;
+}
+
+.headerImg {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+
 
 .home {
 
@@ -29,11 +50,34 @@ h1 {
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+  
+      width:100%;
+      margin: 20px auto;
+      border-radius: 20px ;
+
+      .blast {
+        width: 100%;
+      }
+
+      .sky {
+        display: none;
+      }
+  
+      .launch{
+        display: none;
+      }
+  } 
+
     img {
       width: 100%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone{
+        width: 100%;
+      }
     }
   }
 
@@ -48,6 +92,13 @@ h1 {
     p {
       margin-top: 13px;
     }
+
+    @media @phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: column;
+    align-content: flex-start;
+    }
   }
 
   .walk {
@@ -57,6 +108,28 @@ h1 {
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      margin-top: 60px;
+      border-top: 1px solid @main-border-color;
+      padding: 50px 60px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column-reverse;
+      margin-top: 15px;
+      padding: 20px 15px;
+    }
+    .custom-btn{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 20px 0;
+        width: 50%;
+        @media @phone{
+          width: 100%;
+        }
+        button{
+         .custom-btn(@btn-bg-color,@fontSize);
+        }
+    }
     .walk-text {
       width: 100%;
 
@@ -71,11 +144,24 @@ h1 {
       .btn {
         .custom-btn(@btn-bg-color,@fontSize);
       }
+
+      @media @phone{
+      display: flex;
+      width: 100%;
+      margin-top: 15px;
+      }
     }
 
     .walk-img {
       width: 100%;
       margin-left: 0%;
+
+
+      @media @phone{
+      width: 100%;
+      display: flex;
+      justify-content: column;
+      }
 
       img {
         width: 100%;
